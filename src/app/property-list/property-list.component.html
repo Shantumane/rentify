@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Property List</h2>
+    <div *ngFor="let property of properties">
+      <div class="property-card">
+        <h3>{{ property.place }}</h3>
+        <p>Area: {{ property.area }}</p>
+        <p>Bedrooms: {{ property.bedrooms }}</p>
+        <p>Bathrooms: {{ property.bathrooms }}</p>
+        <p>Nearby Hospitals: {{ property.nearbyHospitals }}</p>
+        <p>Nearby Colleges: {{ property.nearbyColleges }}</p>
+        <button (click)="showInterest(property.id)">I'm Interested</button>
+      </div>
+    </div>
+  </div>
+  
